@@ -17,7 +17,7 @@ cout << "Hit enter whenever you would like to begin! This will display your colu
 cin.get(letter);
 cout <<"1234567890 - type in your name to give us a closer look at set w"<<endl;
 cin >> name;
-cout << setw(8)<< setfill('#') << name;
+cout << setw(8)<< setfill('#') << name <<endl;
 
 
 
