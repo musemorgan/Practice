@@ -1,1 +1,1 @@
-The student's name is Morgan, Their GPA is 3.98, and their classification is Senior.
+The student's name is Morgan, Their GPA is 4.2, and their classification is Senior.

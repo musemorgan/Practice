@@ -21,6 +21,7 @@ cout << showpoint << setprecision(2);//makes the gpa output as a 2 decimal
 cin >> name >> gpa >> classification;
 exFile << "The student's name is " << name << ", Their GPA is " << gpa << ", and their classification is " << classification << "." << endl;
 
+exFile.close();
 
     return 0;
 }
