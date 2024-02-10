@@ -25,6 +25,15 @@ outFile << "Monthly Gross Salary: " << monthlyGrossSalary << ", Monthly Bonus: "
 double payCheck = monthlyGrossSalary - (monthlyGrossSalary * (bonus/100 + taxes/100));
 outFile <<"Paycheck: $" << payCheck << endl;
 
+inFile >> distance >> travelingTime;
+outFile << "\nDistance Traveled: " << distance << " miles, Traveling Time: " << travelingTime << " hours, " <<endl;
+double averageSpeed = distance / travelingTime;
+outFile << "Average Speed: " << averageSpeed << " miles per hour\n" <<endl;
+
+inFile >> numberSold >> costOfCoffee;
+outFile << "Number of Cups Sold: " << numberSold <<", Cost: $" << costOfCoffee <<endl;
+double salesAmount = numberSold * costOfCoffee;
+outFile << "Sales Amount: $"<< salesAmount <<endl;
 
 
     return 0;
