@@ -5,7 +5,7 @@ using namespace std;
 
 int main()
 {
-char currentStanding;
+char currentStanding; //must either be a char or num indentifier for switch statments
 
 cout << " Insert your current college level" << endl;
 cin >> currentStanding;
