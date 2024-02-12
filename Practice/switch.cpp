@@ -5,7 +5,7 @@ using namespace std;
 
 int main()
 {
-int currentStanding;
+char currentStanding;
 
 cout << " Insert your current college level" << endl;
 cin >> currentStanding;
@@ -22,9 +22,6 @@ case 'G':
 default:
     cout << "This student is not currently within a graduate or undergraduate program";
 }
-
-
-
 
 
     return 0;
