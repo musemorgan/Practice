@@ -7,7 +7,7 @@ using namespace std;
 
 int main ()
 {
-int num1, num2, num3;
+int num1 = 0, num2 = 0, num3 = 0;
 int largest, middle, smallest;
 
 cout << "Please enter 3 numbers: " << endl;
