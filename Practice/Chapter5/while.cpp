@@ -23,6 +23,7 @@ cin >> num1 >> num2 >> num3>> num4;
 
 while (counter > 0)
 {
+    cout << "User Input: " << endl;
     cout << num1 << num2 << num3 << num4 << endl;
 
     cout << num1<< " ";
@@ -33,6 +34,7 @@ while (counter > 0)
     counter--;
     cout << num4 << " ";
     counter--;
+    cout << endl;
 }
  
     return 0;
