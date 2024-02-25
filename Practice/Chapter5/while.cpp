@@ -11,17 +11,29 @@ using namespace std;
 
 int main()
 {
-int num1, num2, num3, num4;
+int num1, num2, num3, num4, counter;
+num1 = 0;
+num2 = 0;
+num3 = 0;
+num4 = 0;
+counter = 4;
 
+cout << "Input 4 numbers: "<< endl;
+cin >> num1 >> num2 >> num3>> num4;
 
-while (cin)
+while (counter > 0)
 {
-    cout << num1 << num2 << num3 << num4;
-    cout << num1 << " " << num2 << " " << num3 << " " << num4;
+    cout << num1 << num2 << num3 << num4 << endl;
+
+    cout << num1<< " ";
+    counter--;
+    cout << num2 << " ";
+    counter--;
+    cout << num3 << " ";
+    counter--;
+    cout << num4 << " ";
+    counter--;
 }
-
-
-    
-    
+ 
     return 0;
 }
