@@ -51,6 +51,7 @@ if (firstNum % 3 == 0)
     previousFirstValue = previousFirstValue - 1;
 }
 
+
 do 
 {
 newValue = previousFirstValue;
