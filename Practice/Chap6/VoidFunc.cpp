@@ -12,7 +12,7 @@ cout << legalAge() << endl;
 
 int legalAge()
 {
-int currentAge= 0;
+int currentAge = 0;
 cout << "Enter your age" << endl;
 cin >> currentAge;
 cout << endl;
