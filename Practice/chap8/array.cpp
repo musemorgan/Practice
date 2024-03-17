@@ -27,7 +27,8 @@ for (int i = 2; i >=0 ; i-- ) // this makes the output of the grocery stores get
 ///Here's one last way to make an array (Must include the #include <array> header file name at the top)
 
 array <string,3> cities = {"Tally", "Orlando", "Cinci"}; // this is now an array called cities
-for (int i = 0; i<3 ; i++ ) // this makes the output of the grocery stores get output backwards
+for (int i = 0; i<cities.size() ; i++ ) // cities.size is a method (a function [size] attached to an object [cities])
+//methods allow us to remain in the scope of the array b/ it automatically grabs the size of the array for us
 {
     cout << cities[i];
     cout << ", ";
