@@ -1,4 +1,5 @@
 #include <iostream>
+#include <array>
 
 using namespace std;
 
@@ -22,6 +23,16 @@ for (int i = 2; i >=0 ; i-- ) // this makes the output of the grocery stores get
     cout << groceryStores[i];
     cout << " " << endl;
 }
+
+///Here's one last way to make an array (Must include the #include <array> header file name at the top)
+
+array <string,3> cities = {"Tally", "Orlando", "Cinci"}; // this is now an array called cities
+for (int i = 0; i<3 ; i++ ) // this makes the output of the grocery stores get output backwards
+{
+    cout << cities[i];
+    cout << ", ";
+}
+cout << endl;
 
     return 0;
 }
