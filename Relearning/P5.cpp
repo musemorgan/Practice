@@ -5,23 +5,24 @@
 using namespace std;
 
 class Device {
-    private:
-        int gigabyte {120};
-        bool cellular = true;
-       
+    
     public: 
         Device () = default;
-        int password;
-        int applications;
+        int password, applications, year, gigabyte;
+        bool cellular = true;
+    };
         
+class student {
+    private:
+    int ID;
 
+    public: 
+    string Name;
+    
 };
 
 int main(){
-
 Device Ipad, Iphone, Macbook, Watch;
-
-
 
 
     return 0;
