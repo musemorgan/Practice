@@ -5,10 +5,10 @@
 using namespace std;
 
 class Device {
-    
+   int gigabyte = {120};
     public: 
-        Device () = default;
-        int password, applications, year, gigabyte;
+        Device () = default; // automatically intializes the values above as the default values
+        int password, applications, year;
         bool cellular = true;
     };
         
