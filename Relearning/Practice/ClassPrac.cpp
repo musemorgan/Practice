@@ -37,7 +37,7 @@ professor Prof1, Prof2;
 //now values can get stored to the data members for the objects above
 Prof1.rank = "Dean";
 Prof1.professorName = "Muse";
-Prof1.salary = 125,000;
+Prof1.salary = 125000;
 Prof1.determine_ID();
 
 cout<<"Does professor 1 have a salary increase? " <<endl;
