@@ -47,7 +47,7 @@ if (answer == "yes" || answer == "Yes")
 {
     cout << "Enter what the salary increase is: " <<endl;
     cin >> Prof1.x;
-    cout << Prof1.calculate_increase() << " is the new salary for professor " << Prof1.professorName <<endl;
+    cout << Prof1.calculate_increase() << " is the new salary for Professor " << Prof1.professorName <<endl;
     cout << "Their rank is: " << Prof1.rank <<endl;
 }
 else {
