@@ -9,8 +9,8 @@ class Registration
 {
     public:
     string Name, degreeStatus, edu, major, minor;
-
-    string edulevel[5] = {"Freshman", "Sophmore", "Junior", "Senior", "Graduate"}; //sytnax for creating a list and vector (just switch vector for string)
+    string edulevel[5];
+    Registration():edulevel {"Freshman", "Sophmore", "Junior", "Senior","Graduate"}; 
     //lists are not continguous, so you have to traverse rather than using the index to output the code. However, vectors
     //have the same syntax but lets you traverse a list with indexcies as if it were contiguous 
     
