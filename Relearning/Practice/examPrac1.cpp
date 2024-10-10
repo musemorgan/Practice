@@ -15,7 +15,7 @@ public:
     const linkedListType<T>& operator = (const linkedListType&); //assignment overloader: allows you to use = to continue links
     linkedListType(); //default constructor to initialize the list to an empty state
     int length();
-    T second();
+    void second();
     void print();
     void insertLast(const T& newItem);
 
@@ -39,9 +39,9 @@ int linkedListType<T>::length(){
 }
 
 template <class T>
-T linkedListType<T>::second()
+void linkedListType<T>::second()
 {
-    return first->link->info;
+    cout << first->link->info << endl;
 }
 
 
@@ -91,7 +91,6 @@ class1grades.insertLast(99);
 class1grades.insertLast(87);
 class1grades.insertLast(100);
 class1grades.insertLast(100);
-
 class1grades.print();
 
 
