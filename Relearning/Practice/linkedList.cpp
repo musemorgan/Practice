@@ -39,6 +39,8 @@ class linkedListType{
     void traverseBackward();
     bool search(type value);
     void deleteEnd();
+    void insertAtFront(type value);
+    int length();
     ~linkedListType();
 
 
@@ -118,9 +120,10 @@ void linkedListType<type>::traversal()
         {
             cout << current -> data << " ";
             current = current ->link;
+            
         }
     }
-        
+cout << endl;
 }
 
 
@@ -163,6 +166,41 @@ void linkedListType<type>::deleteEnd()
     tail ->link = nullptr;
 }
 
+template <class type>
+void linkedListType<type>::insertAtFront(type value)
+{
+    nodeType<type> *current = new nodeType<type>;
+    current -> data = value;
+    current -> link = nullptr;
+    
+    if (count == 0)
+    {   
+        head = current;
+        tail = current;
+        count++;
+    }
+    else if (count >= 1)
+    {
+        current->link = head;
+        head = current;
+        count++;
+     /*picture:
+                head-> ---- ---- ---->tail 
+                    current -> ----
+        */
+    }
+    else 
+    {
+        cout << "Error: Insert at front malfunction" << endl;
+    }
+}
+
+template <class type>
+int linkedListType<type>::length()
+{
+    return count;
+}
+
 int main (){
     linkedListType <int> list1;
     list1.initialize();
@@ -171,6 +209,16 @@ int main (){
     list1.insertAtEnd(15);
     list1.insertAtEnd(20);
     list1.insertAtEnd(493);
+    list1.traversal();
+    list1.length();
+    list1.deleteEnd();
+    list1.traversal();
+    list1.length();
+    list1.insertAtFront(92);
+    list1.traversal();
+    list1.insertAtFront(253);
+    list1.traversal();
+    cout << "The final length of your list is " << list1.length()-1 << endl;
 
 
 
