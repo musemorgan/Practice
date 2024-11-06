@@ -17,7 +17,10 @@ public:
     int length();
     void second(); 
     void print();
+    void pop();
+    void isEmpty();
     void insertLast(const T& newItem);
+    
 
 protected: //include count, first, last
     int count;
@@ -44,6 +47,17 @@ void linkedListType<T>::second()
     cout << first->link->info << endl;
 }
 
+//checking to see if the list is empty
+template <class T>
+void linkedListType<T>::isEmpty()
+{
+ if (count == 0)
+    cout << "List is empty" << endl;
+ else 
+    cout << "List is not empty: " << print() << endl;
+
+}
+
 //Traversal 
 template <class T>
 void linkedListType<T>::print()
@@ -54,6 +68,18 @@ void linkedListType<T>::print()
         cout << current->info << " ";
         current = current->link;
     } cout << endl;
+}
+
+//pop
+template <class T>
+void linkedListType<T>::pop(){
+
+if (!isEmpty) 
+{
+//stackTop--
+}
+
+
 }
 
 //
